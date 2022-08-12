@@ -372,13 +372,27 @@ const Panel = () => {
               Buy with Crypto
             </Subtitle>
             <Button>
-              <CoinbaseLogo />
+              <a
+                href="https://commerce.coinbase.com/charges/3XW7TLPJ"
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                <CoinbaseLogo />
+              </a>
             </Button>
             <Subtitle color="#002060" fontWeight="600">
               Buy with Fiat
             </Subtitle>
             <Button>
-              <StripeLogo />
+              <a
+                href="https://buy.stripe.com/3cs6pW9DE9drdzy3cc"
+                target="_blank"
+                rel="noreferrer"
+                style={{ textDecoration: "none" }}
+              >
+                <StripeLogo />
+              </a>
             </Button>
           </Card>
         </CardWrapper>
