@@ -5,18 +5,8 @@ import "./Tooltip.css";
 import CBLogo from "../assets/coinbase.png";
 import Stripe from "../assets/stripe.png";
 
-const Container = styled.div`
-  flex: 1;
-  background-color: #044164;
-  height: 100vh;
-  padding: 15px 30px;
-`;
-
 const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  margin: auto auto;
   background-color: #321e32;
   border-radius: 10px;
   padding: 20px 10px;
@@ -34,11 +24,11 @@ const MessageBanner = styled.h3`
   text-align: center;
   color: #ffffff;
   font-weight: 400;
+  margin: 25px 0 25px 0;
 
   @media (max-width: 768px) {
     margin-bottom: 60px;
     font-size: 16px;
-    margin-bottom: 50px;
   }
 
   @media (max-width: 500px) {
@@ -75,8 +65,13 @@ const Pill = styled.div`
   background-color: #e5cdff;
   width: 15vw;
   text-align: center;
+  margin: 0 0 10px 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
+    margin: 1rem 0px;
+  }
+
+  @media (max-width: 782px) {
     width: 50vw;
     margin: 5px 0px;
   }
@@ -183,222 +178,234 @@ const Panel = () => {
   }
 
   return (
-    <Container>
-      <Wrapper>
-        <Title>ReMeLife Token Pre-Sale</Title>
-        <MessageBanner>
-          It's cold out there in crypto land... but here in Reme Land, it's hot,
-          hot, hot! Don't miss out. Grab some REMEs now before they launch
-          publicly.
-        </MessageBanner>
-        <CardWrapper>
-          <Card>
-            {/* <div className="Tooltip-Wrapper"> */}
-            <Tooltip
-              content="This shows the current number of ReMeLife members."
-              direction="bottom"
-            >
-              <Pill>
-                Active Members: 6000<Span> &#9432;</Span>
-              </Pill>
-            </Tooltip>
-            {/* </div> */}
+    <Wrapper>
+      <Title>ReMeLife Token Pre-Sale</Title>
+      <MessageBanner>
+        It's cold out there in crypto land... but here in Reme Land, it's hot,
+        hot, hot! Don't miss out. Grab some REMEs now before they launch
+        publicly.
+      </MessageBanner>
+      <CardWrapper>
+        <Card>
+          {/* <div className="Tooltip-Wrapper"> */}
+          <Tooltip
+            content="This shows the current number of ReMeLife members."
+            direction="bottom"
+          >
+            <Pill>
+              Active Members: 6000<Span> &#9432;</Span>
+            </Pill>
+          </Tooltip>
+          {/* </div> */}
 
-            <Tooltip
-              content="This shows the current open round."
-              direction="bottom"
-            >
-              <Pill>
-                Current Round: 3<Span> &#9432;</Span>
-              </Pill>
-            </Tooltip>
+          <Tooltip
+            content="This shows the current open round."
+            direction="bottom"
+          >
+            <Pill>
+              Current Round: 3<Span> &#9432;</Span>
+            </Pill>
+          </Tooltip>
 
-            <Tooltip
-              content="This shows the total amount raised."
-              direction="bottom"
-            >
-              <Pill>
-                Total Raised GBP: £5,000,000<Span> &#9432;</Span>
-              </Pill>
-            </Tooltip>
+          <Tooltip
+            content="This shows the total amount raised."
+            direction="bottom"
+          >
+            <Pill>
+              Total Raised GBP: £5,000,000<Span> &#9432;</Span>
+            </Pill>
+          </Tooltip>
 
-            <Tooltip
-              content="This defines the tokenomics of the RTE"
-              direction="bottom"
-            >
-              <Heading>
-                Tokenomics<Span> &#9432;</Span>
-              </Heading>
-            </Tooltip>
-            <Row>
-              <Col>Token Name: </Col>
-              <Col />
-              <Col>REME</Col>
-            </Row>
-            <Row>
-              <Col>Token Symbol: </Col>
-              <Col />
-              <Col>REME</Col>
-            </Row>
-            <Row>
-              <Col>Initial Supply: </Col>
-              <Col />
-              <Col>8,000,000</Col>
-            </Row>
-            <Row>
-              <Col>Decimals: </Col>
-              <Col />
-              <Col>18</Col>
-            </Row>
-            <Row>
-              <Col>Max Cap: </Col>
-              <Col />
-              <Col>600,000,000</Col>
-            </Row>
-          </Card>
-          <Card>
-            <Tooltip
-              content="The ReMeLife Token Event has four rounds with open dates. Each is discounted to the REME launch price of £0.10"
-              direction="bottom"
-            >
-              <Heading>
-                Rounds<Span> &#9432;</Span>
-              </Heading>
-            </Tooltip>
-            <Row>
-              <Col color="#002060" fontWeight="600">
-                Round 1
-              </Col>
-              <Col />
-              <Col color="#002060" fontWeight="600">
-                Discount: 50%
-              </Col>
-            </Row>
-            <Row>
-              <Col>Price:</Col>
-              <Col />
-              <Col>£0.50</Col>
-            </Row>
-            <Row>
-              <Col>Raised:</Col>
-              <Col />
-              <Col>£50,000</Col>
-            </Row>
-            <Row>
-              <Col color="red" fontSize="smaller">
-                NOW OPEN!
-              </Col>
-              <Col />
-              <Col></Col>
-            </Row>
-            <Divider />
-            <Row>
-              <Col color="#002060" fontWeight="600">
-                Round 2
-              </Col>
-              <Col />
-              <Col color="#002060" fontWeight="600">
-                Discount: 30%
-              </Col>
-            </Row>
-            <Row>
-              <Col>Price:</Col>
-              <Col />
-              <Col>£0.70</Col>
-            </Row>
-            <Row>
-              <Col>Raised:</Col>
-              <Col />
-              <Col>£150,000</Col>
-            </Row>
-            <Row>
-              <Col color="red" fontSize="smaller">
-                Opens: 27/07/22
-              </Col>
-              <Col />
-              <Col></Col>
-            </Row>
-            <Divider />
-            <Row>
-              <Col color="#002060" fontWeight="600">
-                Round 3
-              </Col>
-              <Col />
-              <Col color="#002060" fontWeight="600">
-                Discount: 20%
-              </Col>
-            </Row>
-            <Row>
-              <Col>Price:</Col>
-              <Col />
-              <Col>£0.80</Col>
-            </Row>
-            <Row>
-              <Col>Raised:</Col>
-              <Col />
-              <Col>£250,000</Col>
-            </Row>
-            <Row>
-              <Col color="red" fontSize="smaller">
-                Opens: 14/08/22
-              </Col>
-              <Col />
-              <Col></Col>
-            </Row>
-          </Card>
-          <Card>
-            <Tooltip
-              content="This provides instructions as to how to make an investment."
-              direction="left"
-            >
-              <Heading>
-                Buy Now<Span> &#9432;</Span>
-              </Heading>
-            </Tooltip>
-            <CalcContainer>
-              <Subtitle color="#002060" fontWeight="600">
-                How much do I get for my investment?
-              </Subtitle>
-              <Input
-                type="number"
-                placeholder={"Enter amount in GBP (£)"}
-                onChange={calculate}
-              />
-              <Subtitle style={{ textAlign: "center" }}>
-                gives you {amount / 0.5} REMEs
-              </Subtitle>
-            </CalcContainer>
+          <Tooltip
+            content="This defines the tokenomics of the RTE"
+            direction="bottom"
+          >
+            <Heading>
+              Tokenomics<Span> &#9432;</Span>
+            </Heading>
+          </Tooltip>
+          <Row>
+            <Col>Token Name: </Col>
+            <Col />
+            <Col>REME</Col>
+          </Row>
+          <Row>
+            <Col>Token Symbol: </Col>
+            <Col />
+            <Col>REME</Col>
+          </Row>
+          <Row>
+            <Col>Initial Supply: </Col>
+            <Col />
+            <Col>8,000,000</Col>
+          </Row>
+          <Row>
+            <Col>Decimals: </Col>
+            <Col />
+            <Col>18</Col>
+          </Row>
+          <Row>
+            <Col>Max Cap: </Col>
+            <Col />
+            <Col>600,000,000</Col>
+          </Row>
+        </Card>
+        <Card>
+          <Tooltip
+            content="The ReMeLife Token Event has four rounds with open dates. Each is discounted to the REME launch price of £0.10"
+            direction="bottom"
+          >
+            <Heading>
+              Rounds<Span> &#9432;</Span>
+            </Heading>
+          </Tooltip>
+          <Row>
+            <Col color="#002060" fontWeight="600">
+              Round 1
+            </Col>
+            <Col />
+            <Col color="#002060" fontWeight="600">
+              Discount: 50%
+            </Col>
+          </Row>
+          <Row>
+            <Col>Price:</Col>
+            <Col />
+            <Col>£0.50</Col>
+          </Row>
+          <Row>
+            <Col>Raised:</Col>
+            <Col />
+            <Col>£50,000</Col>
+          </Row>
+          <Row>
+            <Col color="red" fontSize="smaller">
+              NOW OPEN!
+            </Col>
+            <Col />
+            <Col></Col>
+          </Row>
+          <Divider />
+          <Row>
+            <Col color="#002060" fontWeight="600">
+              Round 2
+            </Col>
+            <Col />
+            <Col color="#002060" fontWeight="600">
+              Discount: 30%
+            </Col>
+          </Row>
+          <Row>
+            <Col>Price:</Col>
+            <Col />
+            <Col>£0.70</Col>
+          </Row>
+          <Row>
+            <Col>Raised:</Col>
+            <Col />
+            <Col>£150,000</Col>
+          </Row>
+          <Row>
+            <Col color="red" fontSize="smaller">
+              Opens: 27/07/22
+            </Col>
+            <Col />
+            <Col></Col>
+          </Row>
+          <Divider />
+          <Row>
+            <Col color="#002060" fontWeight="600">
+              Round 3
+            </Col>
+            <Col />
+            <Col color="#002060" fontWeight="600">
+              Discount: 20%
+            </Col>
+          </Row>
+          <Row>
+            <Col>Price:</Col>
+            <Col />
+            <Col>£0.80</Col>
+          </Row>
+          <Row>
+            <Col>Raised:</Col>
+            <Col />
+            <Col>£250,000</Col>
+          </Row>
+          <Row>
+            <Col color="red" fontSize="smaller">
+              Opens: 14/08/22
+            </Col>
+            <Col />
+            <Col></Col>
+          </Row>
+        </Card>
+        <Card>
+          <Tooltip
+            content="This provides instructions as to how to make an investment."
+            direction="left"
+          >
+            <Heading>
+              Buy Now<Span> &#9432;</Span>
+            </Heading>
+          </Tooltip>
+          <CalcContainer>
             <Subtitle color="#002060" fontWeight="600">
-              Buy with Crypto
+              How much do I get for my investment?
             </Subtitle>
-            <Button>
-              <CoinbaseLogo />
-            </Button>
-            <Subtitle color="#002060" fontWeight="600">
-              Buy with Fiat
+            <Input
+              type="number"
+              placeholder={"Enter amount in GBP (£)"}
+              onChange={calculate}
+            />
+            <Subtitle style={{ textAlign: "center" }}>
+              gives you {amount / 0.5} REMEs
             </Subtitle>
-            <Button>
-              <StripeLogo />
-            </Button>
-          </Card>
-        </CardWrapper>
-        <Subtitle color="white" textAlign="center">
-          For more information regarding the content of this page and how to
-          purchase, please visit our{" "}
-          <FaqBtn>
+          </CalcContainer>
+          <Subtitle color="#002060" fontWeight="600">
+            Buy with Crypto
+          </Subtitle>
+          <Button>
             <a
-              href="https://remelife.io/faqs/"
+              href="https://commerce.coinbase.com/charges/3XW7TLPJ"
               target="_blank"
               rel="noreferrer"
               style={{ textDecoration: "none" }}
             >
-              FAQ
+              <CoinbaseLogo />
             </a>
-          </FaqBtn>{" "}
-          here.
-        </Subtitle>
-      </Wrapper>
-    </Container>
+          </Button>
+          <Subtitle color="#002060" fontWeight="600">
+            Buy with Fiat
+          </Subtitle>
+          <Button>
+            <a
+              href="https://buy.stripe.com/3cs6pW9DE9drdzy3cc"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              <StripeLogo />
+            </a>
+          </Button>
+        </Card>
+      </CardWrapper>
+      <Subtitle color="white" textAlign="center">
+        For more information regarding the content of this page and how to
+        purchase, please visit our{" "}
+        <FaqBtn>
+          <a
+            href="https://remelife.io/faqs/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            FAQ
+          </a>
+        </FaqBtn>{" "}
+        here.
+      </Subtitle>
+    </Wrapper>
   );
 };
 
