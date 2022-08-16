@@ -211,183 +211,182 @@ const Panel = () => {
             </Pill>
           </Tooltip>
 
-            <Tooltip
-              content="This defines the tokenomics of the RTE"
-              direction="bottom"
-            >
-              <Heading>
-                Tokenomics<Span> &#9432;</Span>
-              </Heading>
-            </Tooltip>
-            <Row>
-              <Col>Token Name: </Col>
-              <Col />
-              <Col>REME</Col>
-            </Row>
-            <Row>
-              <Col>Token Symbol: </Col>
-              <Col />
-              <Col>REME</Col>
-            </Row>
-            <Row>
-              <Col>Initial Supply: </Col>
-              <Col />
-              <Col>8,000,000</Col>
-            </Row>
-            <Row>
-              <Col>Decimals: </Col>
-              <Col />
-              <Col>18</Col>
-            </Row>
-            <Row>
-              <Col>Max Cap: </Col>
-              <Col />
-              <Col>600,000,000</Col>
-            </Row>
-          </Card>
-          <Card>
-            <Tooltip
-              content="The ReMeLife Token Event has four rounds with open dates. Each is discounted to the REME launch price of £0.10"
-              direction="bottom"
-            >
-              <Heading>
-                Rounds<Span> &#9432;</Span>
-              </Heading>
-            </Tooltip>
-            <Row>
-              <Col color="#002060" fontWeight="600">
-                Round 1
-              </Col>
-              <Col />
-              <Col color="#002060" fontWeight="600">
-                Discount: 50%
-              </Col>
-            </Row>
-            <Row>
-              <Col>Price:</Col>
-              <Col />
-              <Col>£0.50</Col>
-            </Row>
-            <Row>
-              <Col>Raised:</Col>
-              <Col />
-              <Col>£50,000</Col>
-            </Row>
-            <Row>
-              <Col color="red" fontSize="smaller">
-                NOW OPEN!
-              </Col>
-              <Col />
-              <Col></Col>
-            </Row>
-            <Divider />
-            <Row>
-              <Col color="#002060" fontWeight="600">
-                Round 2
-              </Col>
-              <Col />
-              <Col color="#002060" fontWeight="600">
-                Discount: 30%
-              </Col>
-            </Row>
-            <Row>
-              <Col>Price:</Col>
-              <Col />
-              <Col>£0.70</Col>
-            </Row>
-            <Row>
-              <Col>Raised:</Col>
-              <Col />
-              <Col>£150,000</Col>
-            </Row>
-            <Row>
-              <Col color="red" fontSize="smaller">
-                Opens: 27/07/22
-              </Col>
-              <Col />
-              <Col></Col>
-            </Row>
-            <Divider />
-            <Row>
-              <Col color="#002060" fontWeight="600">
-                Round 3
-              </Col>
-              <Col />
-              <Col color="#002060" fontWeight="600">
-                Discount: 20%
-              </Col>
-            </Row>
-            <Row>
-              <Col>Price:</Col>
-              <Col />
-              <Col>£0.80</Col>
-            </Row>
-            <Row>
-              <Col>Raised:</Col>
-              <Col />
-              <Col>£250,000</Col>
-            </Row>
-            <Row>
-              <Col color="red" fontSize="smaller">
-                Opens: 14/08/22
-              </Col>
-              <Col />
-              <Col></Col>
-            </Row>
-          </Card>
-          <Card>
-            <Tooltip
-              content="This provides instructions as to how to make an investment."
-              direction="left"
-            >
-              <Heading>
-                Buy Now<Span> &#9432;</Span>
-              </Heading>
-            </Tooltip>
-            <CalcContainer>
-              <Subtitle color="#002060" fontWeight="600">
-                How much do I get for my investment?
-              </Subtitle>
-              <Input
-                type="number"
-                placeholder={"Enter amount in GBP (£)"}
-                onChange={calculate}
-              />
-              <Subtitle style={{ textAlign: "center" }}>
-                gives you {amount / 0.5} REMEs
-              </Subtitle>
-            </CalcContainer>
+          <Tooltip
+            content="This defines the tokenomics of the RTE"
+            direction="bottom"
+          >
+            <Heading>
+              Tokenomics<Span> &#9432;</Span>
+            </Heading>
+          </Tooltip>
+          <Row>
+            <Col>Token Name: </Col>
+            <Col />
+            <Col>REME</Col>
+          </Row>
+          <Row>
+            <Col>Token Symbol: </Col>
+            <Col />
+            <Col>REME</Col>
+          </Row>
+          <Row>
+            <Col>Initial Supply: </Col>
+            <Col />
+            <Col>8,000,000</Col>
+          </Row>
+          <Row>
+            <Col>Decimals: </Col>
+            <Col />
+            <Col>18</Col>
+          </Row>
+          <Row>
+            <Col>Max Cap: </Col>
+            <Col />
+            <Col>600,000,000</Col>
+          </Row>
+        </Card>
+        <Card>
+          <Tooltip
+            content="The ReMeLife Token Event has four rounds with open dates. Each is discounted to the REME launch price of £0.10"
+            direction="bottom"
+          >
+            <Heading>
+              Rounds<Span> &#9432;</Span>
+            </Heading>
+          </Tooltip>
+          <Row>
+            <Col color="#002060" fontWeight="600">
+              Round 1
+            </Col>
+            <Col />
+            <Col color="#002060" fontWeight="600">
+              Discount: 50%
+            </Col>
+          </Row>
+          <Row>
+            <Col>Price:</Col>
+            <Col />
+            <Col>£0.50</Col>
+          </Row>
+          <Row>
+            <Col>Raised:</Col>
+            <Col />
+            <Col>£50,000</Col>
+          </Row>
+          <Row>
+            <Col color="red" fontSize="smaller">
+              NOW OPEN!
+            </Col>
+            <Col />
+            <Col></Col>
+          </Row>
+          <Divider />
+          <Row>
+            <Col color="#002060" fontWeight="600">
+              Round 2
+            </Col>
+            <Col />
+            <Col color="#002060" fontWeight="600">
+              Discount: 30%
+            </Col>
+          </Row>
+          <Row>
+            <Col>Price:</Col>
+            <Col />
+            <Col>£0.70</Col>
+          </Row>
+          <Row>
+            <Col>Raised:</Col>
+            <Col />
+            <Col>£150,000</Col>
+          </Row>
+          <Row>
+            <Col color="red" fontSize="smaller">
+              Opens: 27/07/22
+            </Col>
+            <Col />
+            <Col></Col>
+          </Row>
+          <Divider />
+          <Row>
+            <Col color="#002060" fontWeight="600">
+              Round 3
+            </Col>
+            <Col />
+            <Col color="#002060" fontWeight="600">
+              Discount: 20%
+            </Col>
+          </Row>
+          <Row>
+            <Col>Price:</Col>
+            <Col />
+            <Col>£0.80</Col>
+          </Row>
+          <Row>
+            <Col>Raised:</Col>
+            <Col />
+            <Col>£250,000</Col>
+          </Row>
+          <Row>
+            <Col color="red" fontSize="smaller">
+              Opens: 14/08/22
+            </Col>
+            <Col />
+            <Col></Col>
+          </Row>
+        </Card>
+        <Card>
+          <Tooltip
+            content="This provides instructions as to how to make an investment."
+            direction="left"
+          >
+            <Heading>
+              Buy Now<Span> &#9432;</Span>
+            </Heading>
+          </Tooltip>
+          <CalcContainer>
             <Subtitle color="#002060" fontWeight="600">
-              Buy with Crypto
+              How much do I get for my investment?
             </Subtitle>
-            <Button>
-              <CoinbaseLogo />
-            </Button>
-            <Subtitle color="#002060" fontWeight="600">
-              Buy with Fiat
+            <Input
+              type="number"
+              placeholder={"Enter amount in GBP (£)"}
+              onChange={calculate}
+            />
+            <Subtitle style={{ textAlign: "center" }}>
+              gives you {amount / 0.5} REMEs
             </Subtitle>
-            <Button>
-              <StripeLogo />
-            </Button>
-          </Card>
-        </CardWrapper>
-        <Subtitle color="white" textAlign="center">
-          For more information regarding the content of this page and how to
-          purchase, please visit our{" "}
-          <FaqBtn>
-            <a
-              href="https://remelife.io/faqs/"
-              target="_blank"
-              rel="noreferrer"
-              style={{ textDecoration: "none" }}
-            >
-              FAQ
-            </a>
-          </FaqBtn>{" "}
-          here.
-        </Subtitle>
-      </Wrapper>
-    </Container>
+          </CalcContainer>
+          <Subtitle color="#002060" fontWeight="600">
+            Buy with Crypto
+          </Subtitle>
+          <Button>
+            <CoinbaseLogo />
+          </Button>
+          <Subtitle color="#002060" fontWeight="600">
+            Buy with Fiat
+          </Subtitle>
+          <Button>
+            <StripeLogo />
+          </Button>
+        </Card>
+      </CardWrapper>
+      <Subtitle color="white" textAlign="center">
+        For more information regarding the content of this page and how to
+        purchase, please visit our{" "}
+        <FaqBtn>
+          <a
+            href="https://remelife.io/faqs/"
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none" }}
+          >
+            FAQ
+          </a>
+        </FaqBtn>{" "}
+        here.
+      </Subtitle>
+    </Wrapper>
   );
 };
 
